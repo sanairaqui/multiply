@@ -1,0 +1,21 @@
+<head>
+  <title>multiply</title>
+</head>
+
+
+<div class="container">
+  <header>
+    <h1>Todo List</h1>
+  </header>
+<body>
+  <ul>
+    {{#each tasks}}
+      {{> task}}
+    {{/each}}
+  </ul>
+</div>
+</body>
+
+<template name="task">
+<li>{{text}}</li>
+</template>
